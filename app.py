@@ -10,10 +10,9 @@ def home():
         status="ok"
     )
 
-
 @app.route("/health")
 def health():
-    return jsonify(message="Updated via CI/CD!", status="ok")
+    return jsonify(status="healthy")
 
 
 if __name__ == "__main__":
