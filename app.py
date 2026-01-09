@@ -6,14 +6,14 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify(
-        message="Hello from CI/CD pipeline!",
+        message="Hello from CI/CD pipeline! I am Anubhav",
         status="ok"
     )
 
 
 @app.route("/health")
 def health():
-    return jsonify(status="healthy")
+    return jsonify(message="Updated via CI/CD!", status="ok")
 
 
 if __name__ == "__main__":
